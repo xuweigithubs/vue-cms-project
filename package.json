@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --port 8083 --contentBase src --hot",
+    "dev": "webpack-dev-server --open --port 8083 --contentBase src --hot --host 192.168.15.89",
     "build": "babel src -d lib"
   },
   "author": "",
@@ -23,6 +23,7 @@
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "jshint": "^2.9.6",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "load-svg": "^1.0.0",
@@ -34,6 +35,7 @@
     "url-loader": "^1.1.1",
     "vue": "^2.5.17",
     "vue-loader": "^15.4.2",
+    "vue-resource": "^1.5.1",
     "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.19.1",
@@ -42,6 +44,8 @@
   },
   "devDependencies": {
     "babel-plugin-component": "^1.1.1",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "babel-runtime": "^6.26.0",
     "bootstrap": "^3.3.7",
     "jquery": "^3.3.1"
   }
